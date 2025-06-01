@@ -4,97 +4,104 @@
 <head>
     <title>Kofeshgi - Kafe HTML Bootstrap 5 Website Şablonu</title>
     <link rel="icon" href="img/Logo.ico" type="image/x-icon">
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta name="description" content="Kofeshgi - Bakıda ən yaxşı kofe və rahat atmosfer təklif edən kafe. Menyumuz, rezervasiya və əlaqə məlumatları."> <meta name="keywords" content="kafe, kofe, coffee, Baku, Azərbaycan, Kofeshgi, desert, içkilər, rezervasiya"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!--style sheet-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://s.googleapis.com">
-    <link rel="preconnect" href="https://s.gstatic.com" crossorigin>
-    <link
-        href="https://s.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
 
-    <link rel="preconnect" href="https://s.googleapis.com">
-    <link rel="preconnect" href="https://s.gstatic.com" crossorigin>
-    <link
-        href="https://s.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 
-    <!-- s -->
-    <link rel="preconnect" href="https://s.googleapis.com">
-    <link rel="preconnect" href="https://s.gstatic.com" crossorigin>
-    <link
-        href="https://s.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css"> <link rel="stylesheet" href="css/style.css"> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="navbar-icon" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /> </symbol>
+        <symbol id="search" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </symbol>
+        <symbol id="simple-icons--buymeacoffee" viewBox="0 0 24 24"> <path fill="currentColor" d="M19.89 6.853C19.38 4.008 16.823 2 14.531 2H5.012C2.244 2 0 4.244 0 7.012v8.976C0 18.756 2.244 21 5.012 21h8.976c2.768 0 5.012-2.244 5.012-5.012v-.513c2.22-.474 3.544-2.047 3.909-4.646c.336-2.39-.761-4.067-3.019-4.976m-5.07 10.01H5.012c-1.073 0-1.947-.874-1.947-1.947V7.012c0-1.073.874-1.947 1.947-1.947h9.519c1.073 0 1.947.874 1.947 1.947v1.838c-2.595.023-4.333 1.398-4.333 4.128c0 2.612 1.93 3.997 4.333 4.03zm3.018-6.138c.198-1.653-.733-3.002-2.458-3.002h-1.72v6.003h1.72c1.747 0 2.673-1.328 2.458-3.001"/>
+        </symbol>
+        <symbol id="game-icons--coffee-pot" viewBox="0 0 24 24"> <path fill="currentColor" d="M5 3c-1.108 0-2 .892-2 2v2c0 .975.713 1.808 1.67 1.97C4.259 9.03 4 9.493 4 10v8c0 1.108.892 2 2 2h8c1.108 0 2-.892 2-2v-8c0-.507-.259-.97-.67-1.03A2.006 2.006 0 0 0 17 7V5c0-1.108-.892-2-2-2zm1 2h8v2h-2.207l-1.431 2.148A1.002 1.002 0 0 1 9.553 9H8V5zm0 6h6v6H6zm11 .5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5z"/>
+        </symbol>
+         <symbol id="game-icons--coffee-cup" viewBox="0 0 24 24"> <path fill="currentColor" d="M3 3c-.552 0-1 .448-1 1v12c0 1.105.895 2 2 2h8c1.105 0 2-.895 2-2V4c0-.552-.448-1-1-1zm1 1h8v12H4zm11 1a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a3 3 0 0 1 3 3v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2a5 5 0 0 0-5-5h-1V5a1 1 0 0 0-1-1z"/>
+        </symbol>
+        <symbol id="game-icons--coffee-beans" viewBox="0 0 24 24"> <path fill="currentColor" d="M16.923 3.51a2.017 2.017 0 0 0-2.088.624l-.98 1.173a2.017 2.017 0 0 0-.043 2.75l2.06 2.252a2.017 2.017 0 0 0 2.75.043l.98-1.173a2.017 2.017 0 0 0 .043-2.75zm-3.913 3.56a2.017 2.017 0 0 0-2.088.624l-.98 1.173a2.017 2.017 0 0 0-.043 2.75l2.06 2.252a2.017 2.017 0 0 0 2.75.043l.98-1.173a2.017 2.017 0 0 0 .043-2.75zM9.087 8.87a2.017 2.017 0 0 0-2.088.624l-.98 1.173a2.017 2.017 0 0 0-.043 2.75l2.06 2.252a2.017 2.017 0 0 0 2.75.043l.98-1.173a2.017 2.017 0 0 0 .043-2.75zM5.175 12.43a2.017 2.017 0 0 0-2.088.624l-.98 1.173a2.017 2.017 0 0 0-.043 2.75L4.124 19.23a2.017 2.017 0 0 0 2.75.043l.98-1.174a2.017 2.017 0 0 0 .043-2.75z"/>
+        </symbol>
+    </svg>
+
     <style>
-        .navbar-brand {
-            width: 150px;
-            height: auto;
+        .bg-info-subtle {
+            background: none !important;
+        }
+
+        .navbar-brand img.logo { /* Daha spesifik selector */
+            width: 150px; /* Genişlik */
+            height: auto;   /* Hündürlük avtomatik təyin olunsun */
+        }
+        /* MODERNLƏŞDİRMƏ: Bannerdəki qırmızı bloku daha yaxşı idarə etmək üçün */
+        #banner-content .info-card {
+            background-color: var(--bs-danger); /* Bootstrap dəyişənindən istifadə */
+            border-radius: 1.5rem; /* Daha yumşaq kənarlar */
+            padding: 2.5rem;
+            margin-top: -70px; /* Mənfi margin ilə yuxarı çəkmək */
+            position: relative; /* Z-index üçün */
+            z-index: 2; /* Şəklin üstündə olması üçün */
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); /* Kölgə effekti */
+        }
+
+        /* Menyu qiymətlərini sağa hizalamaq üçün */
+        #menu .list-unstyled li h5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menu .list-unstyled li h5 span.price { /* Qiymət üçün ayrıca span */
+            font-weight: bold; /* İstəyə görə */
         }
     </style>
 </head>
 
 <body>
-    <header class="bg-primary">
-        <nav id="primary-header" class="navbar navbar-expand-lg py-3 px-2 border-top">
-            <div class="container">
+    <header class="bg-primary sticky-top shadow-sm"> <nav id="primary-header" class="navbar navbar-expand-lg py-3"> <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/Logo.png" class="logo img-fluid">
-                </a>
+                    <img src="img/Logo.png" class="logo img-fluid" alt="Kofeshgi Logo"> </a>
                 <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
-                    aria-expanded="false">
-                    <svg class="" width="60" height="60">
-                        <use xlink:href="#navbar-icon"></use>
+                    aria-expanded="false" aria-label="Toggle navigation"> <svg class="" width="30" height="30"> <use xlink:href="#navbar-icon"></use>
                     </svg>
                 </button>
-                <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar"
-                    aria-labelledby="bdNavbarOffcanvasLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
                     <div class="offcanvas-header px-4 pb-0">
-                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-                            aria-label="Close" data-bs-target="#bdNavbar"></button>
-                    </div>
-                    <div class="offcanvas-body align-items-center justify-content-end">
-                        <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
-                            <li class="nav-item px-3">
-                                <a class="nav-link active p-0" aria-current="page" href="index.html">Əsas Səhifə</a>
+                        <h5 class="offcanvas-title" id="bdNavbarOffcanvasLabel">Menyu</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> </div>
+                    <div class="offcanvas-body align-items-center"> <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase"> <li class="nav-item px-lg-3"> <a class="nav-link active p-0" aria-current="page" href="index.html">Əsas Səhifə</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3">
                                 <a class="nav-link p-0" href="aboutus.html">Haqqımızda</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3">
                                 <a class="nav-link p-0" href="team.html">Komanda</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3">
                                 <a class="nav-link p-0" href="blog.html">Blog</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3">
                                 <a class="nav-link p-0" href="contact.html">Əlaqə</a>
                             </li>
-                            <li class="nav-item ps-3 pe-0 search-dropdown dropdown">
+                            <li class="nav-item ps-lg-3 pe-lg-0 search-dropdown dropdown">
                                 <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#"
                                     role="button" aria-expanded="false">
                                     <svg class="search" width="24" height="24">
                                         <use xlink:href="#search"></use>
                                     </svg>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
-                                    <li class="position-relative d-flex align-items-center p-0">
-                                        <input class="form-control me-2 shadow-none" type="search" placeholder="Axtarış"
-                                            aria-label="Search">
-                                        <button class="btn btn-primary position-absolute end-0" type="submit">
-                                            <svg class="search" width="24" height="24">
-                                                <use xlink:href="#search"></use>
-                                            </svg>
-                                        </button>
+                                    <span class="d-lg-none ms-2">Axtarış</span> </a>
+                                <ul class="dropdown-menu dropdown-menu-end animate slideIn mt-lg-3 border-0 p-3 shadow"> <li> <form class="d-flex">
+                                            <input class="form-control me-2 shadow-none" type="search" placeholder="Axtarış..."
+                                                aria-label="Search">
+                                            <button class="btn btn-primary" type="submit">
+                                                <svg class="search" width="20" height="20"> <use xlink:href="#search"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </li>
@@ -105,898 +112,419 @@
         </nav>
     </header>
 
-    <section id="banner-content" class="position-relative">
-        <img src="img/hero-bg.png" alt="banner" class="img-fluid">
-
-        <div
-            class="container-md d-none d-lg-block border rounded-5 z-3 position-absolute start-50 top-md-100 translate-middle bg-danger">
-            <div class="row justify-content-center p-5 ">
-                <div class="col-md-6 border-end">
-                    <h3 class="display-5">Bir fincan kofe içək</h3>
-                    <a href="#" class="btn btn-primary mt-3 text-uppercase">Rezervasiya et</a>
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <h3 class="display-5">
-                        İş qrafiki
-                    </h3>
-                    <ul class="list-unstyled">
-                        <li class="fs-5">
-                            B.e - C.a.....................6:00 - 19:00
-                        </li>
-                        <li class="fs-5">
-                            Ş.b - B.a.....................7:00 - 15:00
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container-md d-lg-none d-block border rounded-5 z-3 bg-danger margin-medium mb-0">
-            <div class="row justify-content-center p-5 ">
-                <div class="col-md-6 border-end mb-5 mb-md-0">
-                    <h3 class="display-5">Bir fincan kofe içək</h3>
-                    <a href="#" class="btn btn-primary mt-3 text-uppercase">Rezervasiya et</a>
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <h3 class="display-5">
-                        Kofeshgi iş qrafiki
-                    </h3>
-                    <ul class="list-unstyled">
-                        <li class="fs-5">
-                            B.e - C.a.....................6:00 - 19:00
-                        </li>
-                        <li class="fs-5">
-                            Ş.b - B.a.....................7:00 - 15:00
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="aboutus" class="padding-medium pb-5 mb-5 pb-lg-0">
-        <div class="container-md mt-lg-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/coffee bean.png" class="img-fluid">
-                </div>
-                <div class="col-md-6 align-content-center">
-                    <h3 class="display-1">
-                        Haqqımızda
-                    </h3>
-                    <div>
-                        <p>
-                            Kofeshgiyə xoş gəlmisiniz!
-                            Burada sizi rahat, səmimi və dəvətkar bir atmosfer gözləyir. Məqsədimiz sadəcə kofe təqdim etmək deyil — biz hər fincanla bir xatirə yaratmaq istəyirik.
-</p><p>
-                            İstər klassik bir kappuçino sevən olun, istərsə də sadəcə yaxşı bir latte ilə günə başlamaq istəyən — burada sizə uyğun bir şey mütləq tapılacaq. Gəlin, birlikdə bir fincanın içində xoş anlar paylaşaq.
-                        </p>
-                        <a href="#" class="btn btn-primary mt-3 text-uppercase ">Haqqımızda</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="options">
-        <div class="container text-center">
-            <div class="row row-cols-lg-4">
-    <div class="col-md-3 my-3">
-        <svg class="accent-color" width="60" height="60">
-            <use xlink:href="#simple-icons--buymeacoffee"></use>
-        </svg>
-        <h5>
-            Rahat Atmosfer
-        </h5>
-        <p>
-            Dincələ biləcəyiniz isti və rahat bir mühit yaratmışıq.
-        </p>
-    </div>
-    <div class="col-md-3 my-3">
-        <svg class="accent-color" width="60" height="60">
-            <use xlink:href="#game-icons--coffee-pot"></use>
-        </svg>
-        <h5>
-            Əsl Kofe Zövqü
-        </h5>
-        <p>
-            Usta baristalarımızın sevgi ilə hazırladığı kofeləri hər qurtumda sizi heyran edəcək.
-        </p>
-    </div>
-    <div class="col-md-3 my-3">
-        <svg class="accent-color" width="60" height="60">
-            <use xlink:href="#game-icons--coffee-cup"></use>
-        </svg>
-        <h5>
-            Fərqli Dadlar
-        </h5>
-        <p>
-            Klassiklərdən tutmuş fərqli tərzlərə qədər — hər damaq dadına uyğun təzə və maraqlı seçimlər sizi gözləyir.
-        </p>
-    </div>
-    <div class="col-md-3 my-3">
-        <svg class="accent-color" width="60" height="60">
-            <use xlink:href="#game-icons--coffee-beans"></use>
-        </svg>
-        <h5>
-            Səmimi Xidmət
-        </h5>
-        <p>
-            Gülümsəyən personalımızla hər ziyarətinizdə özünüzü evinizdəki kimi hiss edəcəksiniz.
-        </p>
-    </div>
-</div>
-
-        </div>
-    </section>
-
-    <section id="category" class="padding-medium">
-        <div class="container-fluid">
-            <div class="row text-center ">
-                <div class="col-md-4 my-3">
-                    <a href="#"> <img src="img/Limg-1.png" class="img-fluid border-0"> </a>
-                    <a href="#">
-                        <h3 class="display-6 p-2">
-                            Desertlər
-                        </h3>
-                    </a>
-                </div>
-                <div class="col-md-4 my-3">
-                    <a href="#"> <img src="img/Limg-2.png" class="img-fluid border-0"> </a>
-                    <a href="#">
-                        <h3 class="display-6 p-2">
-                            İsti İçkilər
-                        </h3>
-                    </a>
-                </div>
-                <div class="col-md-4 my-3">
-                    <a href="#"> <img src="img/Limg-3.png" class="img-fluid border-0"> </a>
-                    <a href="#">
-                        <h3 class="display-6 p-2">
-                            Soyuq İçkilər
-                        </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="menu">
-        <div class="container">
-  <h2 class="display-1">
-    Menyumuz
-  </h2>
-  <div class="row">
-    <div class="col">
-      <div class="row">
-        <div class="col">
-          <h3 class="display-6">
-            Kofe
-          </h3>
-          <ul class="list-unstyled">
-            <li>
-              <h5>
-                Espresso
-                3₼
-              </h5>
-              <p>
-                Güclü, kiçik həcmli konsentrə kofe.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Americano
-                3.5 ₼
-              </h5>
-              <p>
-                Espresso-nun isti su ilə açılması.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Kappuçino
-                4 ₼
-              </h5>
-              <p>
-                Espresso, buxarlanmış süd və süd köpüyü qarışımı.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Latte
-                4.5 ₼
-              </h5>
-              <p>
-                Yumşaq südlü espresso, nazik köpüklə.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Mocha
-                5 ₼
-              </h5>
-              <p>
-                Espresso, isti şokolad və buxarlanmış südlü kremli qarışım.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Makadamiya Latte
-                4 ₼
-              </h5>
-              <p>
-                Qozlu və ləzzətli makadamiya dadlı latte.
-              </p>
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col py-3">
-              <h3 class="display-6">
-                Xüsusi Içkilər
-              </h3>
-              <ul class="list-unstyled">
-                <li>
-                  <h5>
-                    Vanil Latte
-                    5 ₼
-                  </h5>
-                  <p>
-                    Şirin vanil aromalı latte.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Soyuq Dəmlənmiş Kofe
-                    3.5 ₼
-                  </h5>
-                  <p>
-                    Soyuq suda yavaş dəmlənmiş təmiz və cəsarətli kofe.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Karamel Makkiato
-                    4 ₼
-                  </h5>
-                  <p>
-                    Karamel, süd və espresso köpüyü qarışımı.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Fındıq Frappuccino
-                    6 ₼
-                  </h5>
-                  <p>
-                    Buzlu, fındıq aromalı kremli qarışım.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Matcha Latte
-                    5 ₼
-                  </h5>
-                  <p>
-                    Matcha yaşıl çaylı, torpaq dadlı kremli latte.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <h3 class="display-6">
-            Çörək və Qəlyanaltılar
-          </h3>
-          <ul class="list-unstyled">
-            <li>
-              <h5>
-                Keks
-                3.5 ₼
-              </h5>
-              <p>
-                Təzə bişmiş, yumşaq və dadlı.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Darçın Rulu
-                4 ₼
-              </h5>
-              <p>
-                Darçın və şirə ilə şirin rulo çörəyi.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Danimarka Piroqu
-                4.5 ₼
-              </h5>
-              <p>
-                Dolgulu, hava kimi yəngil şirin piroq.
-              </p>
-            </li>
-            <li>
-              <h5>
-                Skon
-                4.5 ₼
-              </h5>
-              <p>
-                Duzlu və ya şirin, tez qəlyanaltı üçün ideal çörək.
-              </p>
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col py-3">
-              <h3 class="display-6">
-                Yüngül Qəlyanaltılar
-              </h3>
-              <ul class="list-unstyled">
-                <li>
-                  <h5>
-                    Krem Pendirli Beqel
-                    5 ₼
-                  </h5>
-                  <p>
-                    Qızardılmış beqel, krem pendir ilə.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Qranola Bar
-                    2.5 ₼
-                  </h5>
-                  <p>
-                    Enerji dolu, yolda yemək ücün ideal bar.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Meyvə Qabı
-                    4 ₼
-                  </h5>
-                  <p>
-                    Təzə meyvələrdən ibarət qarışıq, yüngül bir tərəvəz.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col py-3">
-              <h3 class="display-6">
-                Əlavələr
-              </h3>
-              <ul class="list-unstyled">
-                <li>
-                  <h5>
-                    Əlavə Espresso
-                    0.5 ₼
-                  </h5>
-                  <p>
-                    Daha cəsarətli dad sevənlər ücün espresso shot.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Ədviyyat Şirələri
-                    0.5 ₼
-                  </h5>
-                  <p>
-                    Vanil, karamel, fındıq və s. Şirələr.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Bitki Mənşəli Süd (Badam, Soya, Yulaf)
-                    0.5 ₼
-                  </h5>
-                  <p>
-                    Alternativ süd sevənlər ücün.
-                  </p>
-                </li>
-                <li>
-                  <h5>
-                    Şokolad Sousu
-                    0.5 ₼
-                  </h5>
-                  <p>
-                    İçkinizə Şirin toxunuş.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </section>
-
-    <section id="reservation" class="padding-medium">
-        <div class="row g-0 align-items-center bg-info">
-            <div class="col-lg-6">
-                <img src="img/reservationg-bg.png" class="img-fluid">
-            </div>
-            <div class="col-lg-6 ">
-                <div class="p-5 m-5">
-                    <h3 class="display-1">
-                        Rezervasiya
-                    </h3>
-                    <form id="reservationForm" class="row g-3">
-  <div class="col-md-6">
-    <label for="guests" class="form-label">Nəfər sayı</label>
-    <select id="guests" class="form-select" required>
-      <option selected disabled>Seçin...</option>
-      <option value="1">1 nəfər</option>
-      <option value="2">2 nəfər</option>
-      <option value="3">3 nəfər</option>
-      <option value="4">4 nəfər</option>
-      <option value="5">5 nəfər</option>
-      <option value="6">6 nəfər</option>
-    </select>
-  </div>
-
-  <div class="col-md-6">
-    <label for="date" class="form-label">Tarix</label>
-    <input type="date" id="date" class="form-control" required>
-  </div>
-
-  <div class="col-md-6">
-    <label for="time" class="form-label">Saat</label>
-    <select id="time" class="form-select" required>
-      <option selected disabled>Seçin...</option>
-      <option value="11:00">11:00</option>
-      <option value="12:00">12:00</option>
-      <option value="13:00">13:00</option>
-      <option value="14:00">14:00</option>
-      <option value="15:00">15:00</option>
-      <option value="16:00">16:00</option>
-    </select>
-  </div>
-
-  <div class="col-md-6">
-    <label for="phone" class="form-label">Əlaqə nömrəsi</label>
-    <input type="tel" id="phone" class="form-control" placeholder="050-123-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-  </div>
-
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Rezervasiya et</button>
-  </div>
-</form>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-document.getElementById('reservationForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const guests = document.getElementById('guests').value;
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const phone = document.getElementById('phone').value;
-
-    const content = `
-Yeni rezervasiya!
-👥 Nəfər sayı: ${guests}
-📅 Tarix: ${date}
-⏰ Saat: ${time}
-📞 Əlaqə nömrəsi: ${phone}
-    `;
-
-    fetch("https://discord.com/api/webhooks/1378684293563416636/kM1qs6Lvfb-jpjOvpxcJgDXB-bD_UG0tMQc20HSSDt-6XW505pLMQcgcMjNT2DPcSfE_", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            content: content
-        })
-    }).then(response => {
-        if (response.ok) {
-            alert("Rezervasiyanız qeydə alındı. Təşəkkür edirik!");
-            document.getElementById('reservationForm').reset();
-        } else {
-            alert("Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.");
-        }
-    }).catch(error => {
-        console.error('Xəta:', error);
-        alert("Şəbəkə xətası baş verdi.");
-    });
-});
-</script>
-
-
-    <section id="testimonial">
-        <div class="container text-center">
-            <div class="row">
-                <div class="offset-lg-2 col-lg-1">
-                    <img src="img/dash.png" class="img-fluid d-flex justify-content-end">
-                </div>
-                <div class="col-lg-7">
-                    <div class="align-items-center">
-                        <div class="swiper testimonial-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide text-start">
-                                    <div class="offset-0 col-md-12">
-                                        <iconify-icon icon="mdi:format-quote-open"
-                                            class="testimonial-icon"></iconify-icon>
-                                        <h5 class="testimonial-paragraph fs-4 lh-base fw-light fst-italic">
-                                            "Bu kafenin rahat mühitini çox sevirəm!
-                                            İşıqlandırma, rahat oturacaqlar və cazibədar dekor istirahət etmək üçün
-                                            mükəmməl yer edir.
-                                            Kofe haqqında? Sadəcə ilahi! Onların sənətkarlıq qəhvələrinin hər yudumu dad
-                                            büdrəcikləri üçün bir hədiyyədir.
-                                            Çox tövsiyə olunur!"
-                                        </h5>
-                                        <h6>Sarah Anderson</h6>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide text-start">
-                                    <div class="offset-0 col-md-12">
-                                        <iconify-icon icon="mdi:format-quote-open"
-                                            class="testimonial-icon"></iconify-icon>
-                                        <h5 class="testimonial-paragraph fs-4 lh-base fw-light fst-italic">
-                                            "Bu kafenin rahat mühitini çox sevirəm!
-                                            İşıqlandırma, rahat oturacaqlar və cazibədar dekor istirahət etmək üçün
-                                            mükəmməl yer edir.
-                                            Kofe haqqında? Sadəcə ilahi! Onların sənətkarlıq qəhvələrinin hər yudumu dad
-                                            büdrəcikləri üçün bir hədiyyədir.
-                                            Çox tövsiyə olunur!"
-                                        </h5>
-                                        <h6>James Rodrigo</h6>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide text-start">
-                                    <div class="offset-0 col-md-12">
-                                        <iconify-icon icon="mdi:format-quote-open"
-                                            class="testimonial-icon"></iconify-icon>
-                                        <h5 class="testimonial-paragraph fs-4 lh-base fw-light fst-italic">
-                                            "Bu kafenin rahat mühitini çox sevirəm!
-                                            İşıqlandırma, rahat oturacaqlar və cazibədar dekor istirahət etmək üçün
-                                            mükəmməl yer edir.
-                                            Kofe haqqında? Sadəcə ilahi! Onların sənətkarlıq qəhvələrinin hər yudumu dad
-                                            büdrəcikləri üçün bir hədiyyədir.
-                                            Çox tövsiyə olunur!"
-                                        </h5>
-                                        <h6>James Rodrigo</h6>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide text-start">
-                                    <div class="offset-0 col-md-12">
-                                        <iconify-icon icon="mdi:format-quote-open"
-                                            class="testimonial-icon"></iconify-icon>
-                                        <h5 class="testimonial-paragraph fs-4 lh-base fw-light fst-italic">
-                                            "Bu kafenin rahat mühitini çox sevirəm!
-                                            İşıqlandırma, rahat oturacaqlar və cazibədar dekor istirahət etmək üçün
-                                            mükəmməl yer edir.
-                                            Kofe haqqında? Sadəcə ilahi! Onların sənətkarlıq qəhvələrinin hər yudumu dad
-                                            büdrəcikləri üçün bir hədiyyədir.
-                                            Çox tövsiyə olunur!"
-                                        </h5>
-                                        <h6>James Rodrigo</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination position-static text-start"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="news" class="padding-medium">
-        <div class="container">
-            <div class="row">
-                <div class="offset-lg-3 col-lg-6">
-                    <h3 class="display-1">
-                        Xəbərlər
-                    </h3>
-                    <h6 class="text-start fw-light">
-                        Blandit enim pretium purus morbi non tincidunt auctor eu molestie. Vitae eu nullam tincidunt
-                        accumsan.
-                    </h6>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="offset-lg-2 col-lg-8">
-
-                    <div class="row g-0 border-top py-3">
-                        <div class="col-4">
-                            <img src="img/news-1.png" class="img-fluid">
-                        </div>
-                        <div class="col-8 text-start align-content-center">
-                            <h6>
-                                Kafe
-                            </h6>
-                            <h5 class="fs-4">
-                                Sənətkarlıq Sənətinin Artan Trendini Araşdırmaq
-                            </h5>
-                        </div>
-                    </div>
-
-                    <div class="row g-0 border-top border-bottom py-3">
-                        <div class="col-4">
-                            <img src="img/news-2.png" class="img-fluid">
-                        </div>
-                        <div class="col-8 text-start align-content-center">
-                            <h6>
-                                Mövzular
-                            </h6>
-                            <h5 class="fs-4">
-                                Gündəlik Zövq Fincanınızın Elmı
-                            </h5>
-                        </div>
-                    </div>
-
-                    <div class="row g-0 border-bottom py-3">
-                        <div class="col-4">
-                            <img src="img/news-3.png" class="img-fluid">
-                        </div>
-                        <div class="col-8 text-start align-content-center">
-                            <h6>
-                                Kateqoriya
-                            </h6>
-                            <h5 class="fs-4">
-                                Müxtəlif Dəmlənmə Üsulları ilə Səyahət
-                            </h5>
-                        </div>
-                    </div>
-
-                    <div class="align-content-center text-center mt-5">
-                        <a href="#" class="btn btn-primary mt-3 text-uppercase">Xəbərlər</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery">
-        <div class="row g-0">
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta1.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta2.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta3.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta4.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta5.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta7.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta8.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta9.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta10.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta11.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta12.jpg" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-lg-2 p-2">
-                <a href="#">
-                    <img src="img/insta6.jpg" class="img-fluid">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="brands" class="padding-medium">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col">
-                    <img src="img/logo1.png" class="brand-img img-fluid">
-                </div>
-                <div class="col">
-                    <img src="img/logo2.png" class="brand-img img-fluid">
-                </div>
-                <div class="col">
-                    <img src="img/logo3.png" class="brand-img img-fluid">
-                </div>
-                <div class="col">
-                    <img src="img/logo4.png" class="brand-img img-fluid">
-                </div>
-                <div class="col">
-                    <img src="img/logo5.png" class="brand-img img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="padding-medium pt-0">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <img class="navbar-brand" src="img/Logo.png" class="img-fluid">
-                            <ul class="d-flex gap-3 list-unstyled">
-                                <li>
-                                    <a class="p-0" href="#">
-                                        <svg class="social" width="24" height="24">
-                                            <use xlink:href="#ri--facebook-fill"></use>
-                                        </svg>
-                                    </a>
+    <main> <section id="banner-content" class="position-relative">
+            <img src="img/hero-bg.png" alt="Kafe banneri" class="img-fluid w-100"> <div class="container">
+                <div class="info-card"> <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6 border-end-lg mb-4 mb-lg-0 pb-4 pb-lg-0 text-center text-lg-start"> <h3 class="display-5">Bir fincan kofe içək</h3>
+                            <a href="#reservation" class="btn btn-primary mt-3 text-uppercase">Rezervasiya et</a> </div>
+                        <div class="col-lg-5 offset-lg-1 text-center text-lg-start">
+                            <h3 class="display-5">
+                                İş qrafiki
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li class="fs-5">
+                                    B.e - C.a.....................6:00 - 19:00
                                 </li>
-                                <li>
-                                    <a class="nav-link p-0" href="#">
-                                        <svg class="social" width="24" height="24">
-                                            <use xlink:href="#mdi--instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link p-0" href="#">
-                                        <svg class="social" width="24" height="24">
-                                            <use xlink:href="#mdi--twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link p-0" href="#">
-                                        <svg class="social" width="24" height="24">
-                                            <use xlink:href="#ri--linkedin-fill"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="nav-link p-0" href="#">
-                                        <svg class="social" width="24" height="24">
-                                            <use xlink:href="#mdi--youtube"></use>
-                                        </svg>
-                                    </a>
+                                <li class="fs-5">
+                                    Ş.b - B.a.....................7:00 - 15:00
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-    <ul class="list-unstyled text-uppercase">
-        <li>
-            <a class="text-decoration-none" href="index.html">
-                <h6>Əsas səhifə</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="#">
-                <h6>Haqqımızda</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="#">
-                <h6>Xidmətlər</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="#">
-                <h6>Dəstək</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="#">
-                <h6>Əlaqə</h6>
-            </a>
-        </li>
-    </ul>
-</div>
+            </div>
+        </section>
 
-<div class="col-md-3">
-    <ul class="list-unstyled text-uppercase">
-        <li>
-            <a class="text-decoration-none" href="https://maps.google.com/?q=Kofeshgi+Baku" target="_blank">
-                <h6>Füzuli küçəsi 10, Bakı</h6>
-            </a>
-        </li>
-    </ul>
-</div>
+        <section id="aboutus" class="padding-medium pb-5 mb-5"> <div class="container mt-lg-5">
+                <div class="row align-items-center"> <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="img/coffee bean.png" class="img-fluid rounded shadow-sm" alt="Kofe dənələri"> </div>
+                    <div class="col-md-6"> <h2 class="display-3 mb-4">Haqqımızda</h2> <div>
+                            <p>
+                                Kofeshgiyə xoş gəlmisiniz!
+                                Burada sizi rahat, səmimi və dəvətkar bir atmosfer gözləyir. Məqsədimiz sadəcə kofe təqdim etmək deyil — biz hər fincanla bir xatirə yaratmaq istəyirik.
+                            </p>
+                            <p>
+                                İstər klassik bir kappuçino sevən olun, istərsə də sadəcə yaxşı bir latte ilə günə başlamaq istəyən — burada sizə uyğun bir şey mütləq tapılacaq. Gəlin, birlikdə bir fincanın içində xoş anlar paylaşaq.
+                            </p>
+                            <a href="aboutus.html" class="btn btn-primary mt-3 text-uppercase">Daha Ətraflı</a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="col-md-3">
-    <ul class="list-unstyled text-uppercase">
-        <li>
-            <a class="text-decoration-none" href="mailto:elaqe@kofeshgi.az">
-                <h6>elaqe@kofeshgi.az</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="tel:+994501234567">
-                <h6>+994 50 123 45 67</h6>
-            </a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="https://instagram.com/kofeshgi" target="_blank">
-                <h6>@kofeshgi</h6>
-            </a>
-        </li>
-    </ul>
-</div>
+        <section id="options" class="py-5 bg-light"> <div class="container text-center">
+                <div class="row"> <div class="col-lg-3 col-md-6 mb-4"> <svg class="accent-color mb-3" width="60" height="60"> <use xlink:href="#simple-icons--buymeacoffee"></use>
+                        </svg>
+                        <h5>Rahat Atmosfer</h5>
+                        <p>Dincələ biləcəyiniz isti və rahat bir mühit yaratmışıq.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <svg class="accent-color mb-3" width="60" height="60">
+                            <use xlink:href="#game-icons--coffee-pot"></use>
+                        </svg>
+                        <h5>Əsl Kofe Zövqü</h5>
+                        <p>Usta baristalarımızın sevgi ilə hazırladığı kofeləri hər qurtumda sizi heyran edəcək.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <svg class="accent-color mb-3" width="60" height="60">
+                            <use xlink:href="#game-icons--coffee-cup"></use>
+                        </svg>
+                        <h5>Fərqli Dadlar</h5>
+                        <p>Klassiklərdən tutmuş fərqli tərzlərə qədər — hər damaq dadına uyğun təzə və maraqlı seçimlər sizi gözləyir.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <svg class="accent-color mb-3" width="60" height="60">
+                            <use xlink:href="#game-icons--coffee-beans"></use>
+                        </svg>
+                        <h5>Səmimi Xidmət</h5>
+                        <p>Gülümsəyən personalımızla hər ziyarətinizdə özünüzü evinizdəki kimi hiss edəcəksiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="col-md-3">
-    <ul class="d-flex gap-3 list-unstyled">
-        <li>
-            <a class="p-0" href="https://facebook.com/kofeshgi" target="_blank">
-                <svg class="social" width="24" height="24">
-                    <use xlink:href="#ri--facebook-fill"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link p-0" href="https://instagram.com/kofeshgi" target="_blank">
-                <svg class="social" width="24" height="24">
-                    <use xlink:href="#mdi--instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link p-0" href="mailto:elaqe@kofeshgi.az">
-                <svg class="social" width="24" height="24">
-                    <use xlink:href="#mdi--email"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link p-0" href="tel:+994501234567">
-                <svg class="social" width="24" height="24">
-                    <use xlink:href="#mdi--phone"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a class="nav-link p-0" href="https://maps.google.com/?q=Kofeshgi+Baku" target="_blank">
-                <svg class="social" width="24" height="24">
-                    <use xlink:href="#mdi--map-marker"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-</div>
+        <section id="category" class="padding-medium">
+            <div class="container"> <div class="row text-center">
+                    <div class="col-md-4 my-3">
+                        <a href="#menu"> <img src="img/Limg-1.png" class="img-fluid border-0 rounded shadow-sm hover-shadow" alt="Desertlər"> </a> <a href="#menu" class="text-decoration-none text-dark"> <h3 class="display-6 p-2">Desertlər</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <a href="#menu"> <img src="img/Limg-2.png" class="img-fluid border-0 rounded shadow-sm hover-shadow" alt="İsti İçkilər"> </a>
+                        <a href="#menu" class="text-decoration-none text-dark">
+                            <h3 class="display-6 p-2">İsti İçkilər</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <a href="#menu"> <img src="img/Limg-3.png" class="img-fluid border-0 rounded shadow-sm hover-shadow" alt="Soyuq İçkilər"> </a>
+                        <a href="#menu" class="text-decoration-none text-dark">
+                            <h3 class="display-6 p-2">Soyuq İçkilər</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="menu" class="py-5"> <div class="container">
+                <h2 class="display-2 text-center mb-5">Menyumuz</h2> <div class="row">
+                    <div class="col-lg-6 mb-4 mb-lg-0"> <h3 class="display-6">Kofe</h3>
+                        <ul class="list-unstyled">
+                            <li><h5>Espresso <span class="price">3₼</span></h5><p>Güclü, kiçik həcmli konsentrə kofe.</p></li>
+                            <li><h5>Americano <span class="price">3.5₼</span></h5><p>Espresso-nun isti su ilə açılması.</p></li>
+                            <li><h5>Kappuçino <span class="price">4₼</span></h5><p>Espresso, buxarlanmış süd və süd köpüyü qarışımı.</p></li>
+                            <li><h5>Latte <span class="price">4.5₼</span></h5><p>Yumşaq südlü espresso, nazik köpüklə.</p></li>
+                            <li><h5>Mocha <span class="price">5₼</span></h5><p>Espresso, isti şokolad və buxarlanmış südlü kremli qarışım.</p></li>
+                            <li><h5>Makadamiya Latte <span class="price">4₼</span></h5><p>Qozlu və ləzzətli makadamiya dadlı latte.</p></li>
+                        </ul>
+
+                        <h3 class="display-6 mt-4">Xüsusi Içkilər</h3>
+                        <ul class="list-unstyled">
+                            <li><h5>Vanil Latte <span class="price">5₼</span></h5><p>Şirin vanil aromalı latte.</p></li>
+                            <li><h5>Soyuq Dəmlənmiş Kofe <span class="price">3.5₼</span></h5><p>Soyuq suda yavaş dəmlənmiş təmiz və cəsarətli kofe.</p></li>
+                            <li><h5>Karamel Makkiato <span class="price">4₼</span></h5><p>Karamel, süd və espresso köpüyü qarışımı.</p></li>
+                            <li><h5>Fındıq Frappuccino <span class="price">6₼</span></h5><p>Buzlu, fındıq aromalı kremli qarışım.</p></li>
+                            <li><h5>Matcha Latte <span class="price">5₼</span></h5><p>Matcha yaşıl çaylı, torpaq dadlı kremli latte.</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="display-6">Çörək və Qəlyanaltılar</h3>
+                        <ul class="list-unstyled">
+                            <li><h5>Keks <span class="price">3.5₼</span></h5><p>Təzə bişmiş, yumşaq və dadlı.</p></li>
+                            <li><h5>Darçın Rulu <span class="price">4₼</span></h5><p>Darçın və şirə ilə şirin rulo çörəyi.</p></li>
+                            <li><h5>Danimarka Piroqu <span class="price">4.5₼</span></h5><p>Dolgulu, hava kimi yüngül şirin piroq.</p></li>
+                            <li><h5>Skon <span class="price">4.5₼</span></h5><p>Duzlu və ya şirin, tez qəlyanaltı üçün ideal çörək.</p></li>
+                        </ul>
+
+                        <h3 class="display-6 mt-4">Yüngül Qəlyanaltılar</h3>
+                        <ul class="list-unstyled">
+                            <li><h5>Krem Pendirli Beqel <span class="price">5₼</span></h5><p>Qızardılmış beqel, krem pendir ilə.</p></li>
+                            <li><h5>Qranola Bar <span class="price">2.5₼</span></h5><p>Enerji dolu, yolda yemək ücün ideal bar.</p></li>
+                            <li><h5>Meyvə Qabı <span class="price">4₼</span></h5><p>Təzə meyvələrdən ibarət qarışıq, yüngül bir tərəvəz.</p></li>
+                        </ul>
+
+                        <h3 class="display-6 mt-4">Əlavələr</h3>
+                        <ul class="list-unstyled">
+                            <li><h5>Əlavə Espresso <span class="price">0.5₼</span></h5><p>Daha cəsarətli dad sevənlər ücün espresso shot.</p></li>
+                            <li><h5>Ədviyyat Şirələri <span class="price">0.5₼</span></h5><p>Vanil, karamel, fındıq və s. Şirələr.</p></li>
+                            <li><h5>Bitki Mənşəli Süd (Badam, Soya, Yulaf) <span class="price">0.5₼</span></h5><p>Alternativ süd sevənlər ücün.</p></li>
+                            <li><h5>Şokolad Sousu <span class="price">0.5₼</span></h5><p>İçkinizə Şirin toxunuş.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="py-5 bg-info-subtle"> <div class="container">
+                <div class="row g-0 align-items-center rounded shadow overflow-hidden"> <div class="col-lg-6 d-none d-lg-block"> <img src="img/reservationg-bg.png" class="img-fluid w-100 h-100 object-fit-cover" alt="Rezervasiya üçün kafe şəkli"> </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5"> <h2 class="display-3 mb-4">Rezervasiya</h2> <form id="reservationForm" class="row g-3 needs-validation" novalidate> <div class="col-md-6">
+                                    <label for="guests" class="form-label">Nəfər sayı</label>
+                                    <select id="guests" class="form-select" required>
+                                        <option selected disabled value="">Seçin...</option> <option value="1">1 nəfər</option>
+                                        <option value="2">2 nəfər</option>
+                                        <option value="3">3 nəfər</option>
+                                        <option value="4">4 nəfər</option>
+                                        <option value="5">5+ nəfər</option> </select>
+                                    <div class="invalid-feedback">Zəhmət olmasa nəfər sayını seçin.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="date" class="form-label">Tarix</label>
+                                    <input type="date" id="date" class="form-control" required>
+                                    <div class="invalid-feedback">Zəhmət olmasa tarix seçin.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="time" class="form-label">Saat</label>
+                                    <select id="time" class="form-select" required>
+                                        <option selected disabled value="">Seçin...</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        </select>
+                                    <div class="invalid-feedback">Zəhmət olmasa saat seçin.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Əlaqə nömrəsi</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="050-123-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                                    <div class="invalid-feedback">Zəhmət olmasa düzgün nömrə daxil edin (nümunə: 050-123-45-67).</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Rezervasiya et</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial" class="py-5"> <div class="container text-center">
+                <h2 class="display-3 mb-5">Müştəri Rəyləri</h2> <div class="row justify-content-center">
+                     <div class="col-lg-8 col-md-10"> <div class="swiper testimonial-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide text-start p-4 border rounded bg-light"> <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon fs-1 text-primary mb-2"></iconify-icon>
+                                    <h5 class="testimonial-paragraph fs-5 lh-base fw-light fst-italic mb-3">
+                                        "Bu kafenin rahat mühitini çox sevirəm! İşıqlandırma, rahat oturacaqlar və cazibədar dekor istirahət etmək üçün mükəmməl yer edir. Kofe haqqında? Sadəcə ilahi! Onların sənətkarlıq qəhvələrinin hər yudumu dad büdrəcikləri üçün bir hədiyyədir. Çox tövsiyə olunur!"
+                                    </h5>
+                                    <h6 class="text-end text-primary fw-bold">Sarah Anderson</h6>
+                                </div>
+                                <div class="swiper-slide text-start p-4 border rounded bg-light">
+                                    <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon fs-1 text-primary mb-2"></iconify-icon>
+                                    <h5 class="testimonial-paragraph fs-5 lh-base fw-light fst-italic mb-3">
+                                        "Xidmət əladır, personal həmişə gülərüz və köməyə hazırdır. Kofe seçimləri genişdir və hər biri xüsusi diqqətlə hazırlanır. Mütləq yenidən gələcəyəm!"
+                                    </h5>
+                                    <h6 class="text-end text-primary fw-bold">James Rodrigo</h6>
+                                </div>
+                                </div>
+                            <div class="swiper-pagination position-static mt-4"></div> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="padding-medium bg-light"> <div class="container">
+                <div class="row justify-content-center text-center"> <div class="col-lg-8">
+                        <h2 class="display-3 mb-3">Xəbərlər</h2> <p class="lead mb-5"> Kofe dünyasındakı ən son yeniliklər, dəmləmə üsulları və maraqlı faktlar haqqında məlumatlı olun.
+                        </p>
+                    </div>
+                </div>
+                <div class="row"> <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm"> <img src="img/news-1.png" class="card-img-top" alt="Xəbər başlığı 1">
+                            <div class="card-body">
+                                <small class="text-muted text-uppercase">Kafe</small>
+                                <h5 class="card-title fs-4 mt-1">Sənətkarlıq Sənətinin Artan Trendini Araşdırmaq</h5>
+                                <a href="blog-single.html" class="stretched-link"></a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                         <div class="card h-100 shadow-sm">
+                            <img src="img/news-2.png" class="card-img-top" alt="Xəbər başlığı 2">
+                            <div class="card-body">
+                                <small class="text-muted text-uppercase">Mövzular</small>
+                                <h5 class="card-title fs-4 mt-1">Gündəlik Zövq Fincanınızın Elmi</h5>
+                                <a href="blog-single.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                         <div class="card h-100 shadow-sm">
+                            <img src="img/news-3.png" class="card-img-top" alt="Xəbər başlığı 3">
+                            <div class="card-body">
+                                <small class="text-muted text-uppercase">Kateqoriya</small>
+                                <h5 class="card-title fs-4 mt-1">Müxtəlif Dəmlənmə Üsulları ilə Səyahət</h5>
+                                <a href="blog-single.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="blog.html" class="btn btn-primary text-uppercase">Bütün Xəbərlər</a> </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-5"> <div class="container-fluid"> <h2 class="display-3 text-center mb-5">Qalereya</h2> <div class="row g-2"> <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta1.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta1.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 1"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta2.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta2.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 2"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta3.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta3.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 3"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta4.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta4.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 4"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta5.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta5.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 5"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta7.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta7.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 6"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta8.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta8.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 7"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta9.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta9.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 8"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta10.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta10.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 9"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta11.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta11.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 10"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta12.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta12.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 11"></a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6"><a href="img/insta6.jpg" data-bs-toggle="lightbox" data-gallery="cafe-gallery"><img src="img/insta6.jpg" class="img-fluid rounded hover-zoom" alt="Kafe qalereya şəkli 12"></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="py-5 bg-light"> <div class="container">
+                <h2 class="display-4 text-center mb-5">Partnyorlarımız</h2> <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"> <img src="img/logo1.png" class="brand-img img-fluid" alt="Brend logo 1"> </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="img/logo2.png" class="brand-img img-fluid" alt="Brend logo 2">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="img/logo3.png" class="brand-img img-fluid" alt="Brend logo 3"> </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="img/logo4.png" class="brand-img img-fluid" alt="Brend logo 4"> </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Kofeshgi</h5>
+                    <p>Hər fincanda mükəmməllik və rahatlıq. Şəhərin ən yaxşı kofe təcrübəsi üçün bizi ziyarət edin.</p>
+                    <img src="img/Logo.png" alt="Kofeshgi Footer Logo" style="width: 100px; background-color: white; padding:5px; border-radius:5px;">
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sürətli Keçidlər</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Əsas Səhifə</a></li>
+                        <li><a href="aboutus.html" class="text-white text-decoration-none">Haqqımızda</a></li>
+                        <li><a href="#menu" class="text-white text-decoration-none">Menyu</a></li>
+                        <li><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Əlaqə</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Əlaqə</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Bakı, Azərbaycan, Ünvanınız buraya</li>
+                        <li><i class="fas fa-phone me-2"></i> +994 XX XXX XX XX</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@kofeshgi.az</li>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white me-2 fs-4"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2 fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; <span id="currentYear"></span> Kofeshgi. Bütün hüquqlar qorunur.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
-    <!-- Script --
-</body>
 
+    <script>
+        // Swiper Testimonial
+        var swiper = new Swiper(".testimonial-swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: { // Avtomatik keçid
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Rezervasiya Forması (Bootstrap validation ilə)
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        // Rezervasiya forması Discord Webhook (TƏHLÜKƏSİZLİK XƏBƏRDARLIĞI)
+        // BU ÜSUL TÖVSİYƏ EDİLMİR! Webhook URL-i müştəri tərəfində görünür və sui-istifadə edilə bilər.
+        // Məlumatları server tərəfindən idarə olunan bir endpoint-ə göndərmək daha təhlükəsizdir.
+        const reservationForm = document.getElementById('reservationForm');
+        if (reservationForm) {
+            reservationForm.addEventListener('submit', function(e) {
+                if (!reservationForm.checkValidity()) { // Əgər forma valid deyilsə, davam etmə
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // alert("Zəhmət olmasa bütün xanaları düzgün doldurun."); // Bootstrap özü mesajları göstərəcək
+                    return;
+                }
+                e.preventDefault(); // Valid olduqdan sonra default submit-i dayandır
+
+                const guests = document.getElementById('guests').value;
+                const date = document.getElementById('date').value;
+                const time = document.getElementById('time').value;
+                const phone = document.getElementById('phone').value;
+                const content = `
+    Yeni rezervasiya!
+    👥 Nəfər sayı: ${guests}
+    📅 Tarix: ${date}
+    ⏰ Saat: ${time}
+    📞 Əlaqə nömrəsi: ${phone}
+        `;
+                // TƏHLÜKƏSİZLİK RİSKİ: Webhook URL-i burada açıqdır!
+                fetch("https://discord.com/api/webhooks/1378684293563416636/kM1qs6Lvfb-jpjOvpxcJgDXB-bD_UG0tMQc20HSSDt-6XW505pLMQcgcMjNT2DPcSfE_", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        content: content
+                    })
+                }).then(response => {
+                    if (response.ok) {
+                        alert("Rezervasiyanız qeydə alındı. Təşəkkür edirik!");
+                        reservationForm.reset();
+                        reservationForm.classList.remove('was-validated'); // Validasiya statusunu sıfırla
+                    } else {
+                        alert("Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.");
+                    }
+                }).catch(error => {
+                    console.error('Xəta:', error);
+                    alert("Şəbəkə xətası baş verdi. İnternet bağlantınızı yoxlayın.");
+                });
+            });
+        }
+
+        // Footer-də ilin avtomatik yenilənməsi
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    </script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> </body>
 </html>
