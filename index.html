@@ -512,7 +512,19 @@
   </div>
 </div>
 
-<form id="reservationForm" class="row g-3">
+    </section>
+
+    <section id="reservation" class="padding-medium">
+        <div class="row g-0 align-items-center bg-info">
+            <div class="col-lg-6">
+                <img src="img/reservationg-bg.png" class="img-fluid">
+            </div>
+            <div class="col-lg-6 ">
+                <div class="p-5 m-5">
+                    <h3 class="display-1">
+                        Rezervasiya
+                    </h3>
+                    <form id="reservationForm" class="row g-3">
   <div class="col-md-6">
     <label for="guests" class="form-label">Nəfər sayı</label>
     <select id="guests" class="form-select" required>
@@ -554,38 +566,49 @@
   </div>
 </form>
 
-<script>
-  document.getElementById("reservationForm").addEventListener("submit", function (e) {
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+document.getElementById('reservationForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const guests = document.getElementById("guests").value;
-    const date = document.getElementById("date").value;
-    const time = document.getElementById("time").value;
-    const phone = document.getElementById("phone").value;
+    const guests = document.getElementById('guests').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const phone = document.getElementById('phone').value;
 
-    const message = `📅 **Yeni rezervasiya**:\n👥 Nəfər sayı: ${guests}\n🗓️ Tarix: ${date}\n⏰ Saat: ${time}\n📞 Əlaqə: ${phone}`;
+    const content = `
+Yeni rezervasiya!
+👥 Nəfər sayı: ${guests}
+📅 Tarix: ${date}
+⏰ Saat: ${time}
+📞 Əlaqə nömrəsi: ${phone}
+    `;
 
     fetch("https://discord.com/api/webhooks/1378684293563416636/kM1qs6Lvfb-jpjOvpxcJgDXB-bD_UG0tMQc20HSSDt-6XW505pLMQcgcMjNT2DPcSfE_", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        content: message,
-      }),
-    })
-    .then(res => {
-      if (res.ok) {
-        alert("Rezervasiyanız uğurla göndərildi!");
-        document.getElementById("reservationForm").reset();
-      } else {
-        alert("Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.");
-      }
-    })
-    .catch(err => {
-      alert("Şəbəkə xətası: " + err);
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            content: content
+        })
+    }).then(response => {
+        if (response.ok) {
+            alert("Rezervasiyanız qeydə alındı. Təşəkkür edirik!");
+            document.getElementById('reservationForm').reset();
+        } else {
+            alert("Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.");
+        }
+    }).catch(error => {
+        console.error('Xəta:', error);
+        alert("Şəbəkə xətası baş verdi.");
     });
-  });
+});
 </script>
 
 
